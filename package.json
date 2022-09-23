@@ -1,0 +1,16 @@
+{
+  "name": "fylo-data-storage-component",
+  "version": "1.0.0",
+  "description": "![Design preview for the Fylo data storage component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://branks1.github.io/fylo-data-storage-component/",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

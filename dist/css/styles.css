@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  background-color: hsl(229deg, 57%, 11%);
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  -moz-column-gap: 0.2em;
+       column-gap: 0.2em;
+  position: relative;
+  bottom: 50px;
+}
+
+section {
+  height: 150px;
+  padding: 30px;
+}
+
+.floater {
+  background-color: white;
+  -webkit-clip-path: polygon(100% 0, 100% 90%, 88% 67%, 0 67%, 0 0);
+          clip-path: polygon(100% 0, 100% 90%, 88% 67%, 0 67%, 0 0);
+  width: 150px;
+  height: 74px;
+  position: absolute;
+  top: 0px;
+  right: 65px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+  font-size: 12px;
+}
+.floater span {
+  font-weight: 700;
+  font-size: 25px;
+  margin-right: 5px;
+  color: hsl(229deg, 57%, 11%);
+}
+
+#first {
+  height: 150px;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1.5em;
+  padding-right: 200px;
+  border-radius: 10px 50px 10px 10px;
+  background-color: hsl(228deg, 56%, 26%);
+}
+
+#second {
+  width: 65%;
+}
+
+.logo {
+  width: 90px;
+}
+
+#icon {
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  -moz-column-gap: 0.5em;
+       column-gap: 0.5em;
+}
+
+.icon-image {
+  background-color: hsl(229deg, 57%, 11%);
+  border-radius: 5px;
+  width: 35px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.icon-image img {
+  width: 20px;
+  height: 17px;
+}
+
+.progress-container {
+  height: 120px;
+  background-color: hsl(228deg, 56%, 26%);
+  width: 100%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.progress-container p {
+  color: hsl(243deg, 100%, 93%);
+  font-size: 12px;
+}
+.progress-container p span {
+  font-weight: 700;
+}
+.progress-container .progress-border {
+  background-color: hsl(229deg, 57%, 11%);
+  height: 10px;
+  border-radius: 30px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.progress-container .progress-border .progress-bar {
+  height: 9px;
+  background-image: linear-gradient(hsl(6deg, 100%, 80%), hsl(335deg, 100%, 65%));
+  width: 81.5%;
+  border-radius: 30px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url(../images/bg-mobile.png);
+    background-size: cover;
+  }
+  .container {
+    flex-direction: column;
+    row-gap: 1em;
+  }
+  main {
+    margin: 0 1em;
+  }
+  #first {
+    width: 100%;
+    height: 190px;
+    border-radius: 10px 100px 10px 10px;
+    padding-right: 150px;
+  }
+  #second {
+    width: 100%;
+    padding: 0px;
+  }
+  #second .progress-container {
+    width: 100%;
+    height: 150px;
+  }
+  .floater {
+    -webkit-clip-path: none;
+            clip-path: none;
+    top: 325px;
+    right: 90px;
+    width: 180px;
+    align-items: center;
+    padding: 2px;
+  }
+  .floater span {
+    font-size: 40px;
+  }
+  .logo {
+    width: 150px;
+  }
+  .icon-image {
+    width: 40px;
+    height: 40px;
+  }
+  .icon-image img {
+    width: 20px;
+    height: 17px;
+  }
+  .icons {
+    -moz-column-gap: 1em;
+         column-gap: 1em;
+  }
+}
